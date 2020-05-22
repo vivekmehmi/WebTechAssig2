@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="theatre tickets page for assignment">
+    <link rel="stylesheet" href="theatretickets.css">
+    <link rel="submitted" href="submitted.html">
+    <title>Theatre Tickets</title>
+</head>
+
+<body class="background">
+<script src="theatretickets.js"></script>
+    <h1 class="title">Theatre Tickets</h1>
+
+<!--navigation -->
+    <nav>
+        <ul class="a">
+            <li class="hp"><a href="fruitmachine.html">Fruit Machine</a></li>
+            <li class="hp"><a href="theatretickets.html">Theatre Tickets</a></li>
+        </ul><br><br>
+    </nav>
+
+<!--forms-->
+
+<!--name-->
+    <form name="bookform" id="bookform" class="fullform" action="submitted.html" method="post">
+        <h2>Name</h2>
+        <label for="fname">Full Name</label><br>
+        <input type="text" id="fname" name="fname" required=""><br>
+
+ <!--address-->
+        <h2>Address</h2>
+        <label for="noofaddress">Full Address</label><br>
+        <input type="text" id="noofaddress" name="noofaddress" required=""><br>
+
+<!--shows-->
+        <h2>Currently Available Shows</h2>
+        <select name="shows" id="shows" onchange="getshowprice()">
+            <option value="79" selected class="Phantom" id="Phantom">Phantom Of The Opera</option>
+            <option value="85" class="hamilton" id="hamilton">Hamilton</option>
+            <option value="67" class="lionking" id="lionking">Lion King</option>
+            <option value="83" class="misssaigon" id="misssaigon">Miss Saigon</option>
+        </select><br>
+
+<!--delivery-->
+        <h2>Method Of Delivery</h2>
+        <select id="delivery" name="delivery" onchange="getdeliveryprice()">
+            <option id="eticket" value="0" selected>E-Ticket</option>
+            <option id="boxoffice" value="1.50">Collect from Box Office</option>
+            <option id="posted" value="3.99">Posted</option>
+        </select><br>
+
+        
+<!--display the delivery cost label-->
+        <label id="displaydelivery"></label>
+
+<!--seats-->
+        <h2>Number Of Seats</h2>
+        <input type="number" id="seats" name="seats" min="1" required=""
+        placeholder="Number of Seats"><br>
+
+        <label id="seatprice"></label><br><br>
+
+<!--book button-->
+        <button type="button" name="book" id="book" onclick="gettotal(), showdiscount(), showfinalcost(), showchosenshow(), showselectedtickets(), showsingleticket(), showdeliverymethod()">Book</button><br><br>
+        <div id="chosenshow"></div>
+        <div id="chosentickets"></div>
+        <div id="singleprice"></div>
+        <div id="deliverychoice"></div><br><br>
+        <div id= "displaytotal"></div>
+        <label id="discount"></label>
+        <div id="finalcost"></div><br><br>
+        <button type="submit" name="submit" id="submit">Submit</button><br><br>
+    </form> 
+</body>

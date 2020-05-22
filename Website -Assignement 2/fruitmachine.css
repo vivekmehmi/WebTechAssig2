@@ -1,0 +1,87 @@
+.body {
+border-style: solid;
+border-color: black;
+border-width: 1px;
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+background-color: khaki;
+}
+
+.creditl {
+text-align: center;
+float: left;
+}
+
+.winningl {
+text-align: center;
+float: right;
+}
+
+.showwin {
+text-align: center;
+}
+
+.showcredit {
+text-align: left;
+}
+
+.showwinnings {
+text-align: right;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 40px;
+}
+
+.buttonclick {
+margin: 5px;
+}
+
+.picsdiv {
+display: flex;
+}
+
+.pictures {
+height: 100px;
+width: auto;
+flex: 0px;
+padding: 10px;
+}
+
+.a{
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center;
+padding: 2px;
+}
+
+.hp {
+display: inline;
+padding: 10px;
+font-style: italic;
+font-family: 'Arial Narrow';
+background-color: khaki;
+border-style: solid;
+border-width: 1px;
+}
+
+.title {
+text-align: center;
+background-color: khaki;
+font-family: 'Arial';
+border-style: solid;
+border-width: 1px;
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.message {
+text-align: center;
+color: red;
+}

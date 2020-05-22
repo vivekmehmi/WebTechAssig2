@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pets page to style for assessment">
+    <link rel="stylesheet" href="fruitmachine.css">
+    <script src="fruitmachine.js"></script>
+    <title>Fruit Machine</title>
+</head>
+
+<body>
+    <h1 class="title">Fruit Machine</h1>
+    <nav>
+        <ul class="a">
+            <li class="hp"><a href="fruitmachine.html">Fruit Machine</a></li>
+            <li class="hp"><a href="theatretickets.html">Theatre Tickets</a></li>
+        </ul><br><br>
+    </nav>
+
+<div class="body">
+    <div class="lables">
+        <div class="creditl">
+            <label id="credit">Credit:</label>
+            <label id="creditshown"></label>
+        </div>
+
+        <div class="winningl">
+            <label id="winnings">Winnings:</label>
+            <label id="winningsshown"></label>
+        </div>
+    </div><br><br>    
+    
+    <div class="picsdiv">
+        <img class="pictures" id="pic1" src="Images/blank.jpg">
+        <img class="pictures" id="pic2" src="Images/blank.jpg">
+        <img class="pictures" id="pic3" src="Images/blank.jpg">
+    </div>
+
+    <div class="message">
+        <label id="message"></label>
+    </div><br>
+
+    <div class="buttons">
+        <button class="buttonclick" type="submit" name="spin" id="spinbutton" onclick="spin()">Spin</button>
+        <button class="buttonclick" type="button" name="credit" onclick="addcredit()">Add Credit</button>
+        <button class="buttonclick" type="button" name="collect" onclick="collectwinnings()">Collect</button>
+    </div>
+
+</div>
+</body>
